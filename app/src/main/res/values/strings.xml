@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">My Student Info</string>
+    <string-array name="courselist">
+        <item>-- SELECT COURSE --</item>
+        <item>BSBA</item>
+        <item>BSED</item>
+        <item>BSCRIM</item>
+        <item>BSHRM</item>
+        <item>BSIT</item>
+    </string-array>
+    <string-array name="levels">
+        <item>-- SELECT LEVEL --</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>

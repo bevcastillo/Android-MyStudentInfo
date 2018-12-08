@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mygradient_bg"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:lineSpacingExtra="10sp"
+                android:padding="10dp"
+                android:paddingTop="30dp"
+                android:text="Student Information"
+                android:textColor=" #2c3e50 "
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/idnum"
+                android:layout_width="300sp"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background=" #fdfefe "
+                android:ems="10"
+                android:hint="ID number"
+                android:inputType="number"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/fullname"
+                android:layout_width="300sp"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background=" #fdfefe "
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="5dp" />
+
+            <Spinner
+                android:id="@+id/course"
+                android:layout_width="300sp"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background=" #fdfefe "
+                android:entries="@array/courselist"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp" />
+
+            <Spinner
+                android:id="@+id/year"
+                android:layout_width="300sp"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background=" #fdfefe "
+                android:entries="@array/levels"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp" />
+
+            <RadioGroup
+                android:id="@+id/gender"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:background=" #fdfefe "
+                android:paddingLeft="5dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Female" />
+
+            </RadioGroup>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/ok"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="10dp"
+                        android:background=" #c0392b "
+                        android:paddingRight="5dp"
+                        android:text="OK" />
+
+                    <Button
+                        android:id="@+id/cancel"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        android:background=" #c0392b "
+                        android:text="Cancel" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
